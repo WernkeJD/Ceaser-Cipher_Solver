@@ -75,6 +75,9 @@ int main() {
 
 		for (int i{ 0 }; i < frequency.size(); i++) {
 
+			if (i == 0) {
+				std::cout << "\n\n letter frequencies are: " << letters[i] << ':' << frequency[i] << ' ';
+			}
 			std::cout << ' ' << letters[i] << ':' << frequency[i] << ' ';
 		}
 
