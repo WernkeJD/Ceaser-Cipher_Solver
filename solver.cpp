@@ -2,7 +2,10 @@
 Description: 
 
 the goal of this project is to build a program that can take a file, with an encrypted
-ceaser cipher and decode it without knowing the process that was done to encode the file.
+ceaser cipher and decode it without knowing the process that was done to encode the file. Letter frequencies are not
+given in order and the common distribution of letter in english is not provided. Simply google
+most used letter in english or english letter frequency distribution to find which letters should be used 
+most and least. Good LucK!
 
 */
 
@@ -76,7 +79,7 @@ int main() {
 		for (int i{ 0 }; i < frequency.size(); i++) {
 
 			if (i == 0) {
-				std::cout << "\n\n letter frequencies are: " << letters[i] << ':' << frequency[i] << ' ';
+				std::cout << "\n\nLetter frequencies in the scrambled text are: ";
 			}
 			std::cout << ' ' << letters[i] << ':' << frequency[i] << ' ';
 		}
